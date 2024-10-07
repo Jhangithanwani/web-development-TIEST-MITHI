@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.zero{
+    height: 100vh;
+    width: 100%;
+    background: rgb(247, 238, 238);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color:  #8128c5;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+.logo::first-letter{
+    font-size: 40px;
+    border: 2px solid blue;
+    border-right: transparent;
+    padding-left: 5px;
+    color: #f64756;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: #1d1d24;
+    position: relative;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #f64756;
+}
+
+nav ul li a::after{
+    content:"";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background: #f64756;
+    transition: -3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.button{
+    color: #efffef;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #f64756;
+    padding: 10px 30px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all --4s ease-in-out;
+    border: 2px solid #f64756;
+}
+
+.button:hover{
+    background: transparent;
+    color: #f64756;
+}
+
+.detail{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+
+.detail h1{
+    color: #1f1f25;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.detail h1 span{
+    color: #f64756;
+}
+
+.detail p{
+    color: #1f1f25;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.image img{
+display: block;
+width: 100%;
+height: auto;
+}
+
+.image{
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+}
+
+/* * {
+    box-sizing: border-box; */
+/* } */
+/* body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+} */
+/* .container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+h1 {
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #f64756;
+    font-family: "Dancing Script", system-ui;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+/* h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #f0ecec;
+} */
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.quote {
+    font-style: italic;
+    color: #00796b;
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-left: 5px solid #00796b;
+    margin: 20px 0;
+}
+ul.hobbies {
+    list-style-type: none;
+    padding: 0;
+}
+ul.hobbies li {
+    background-color: #f8f9fa;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+ul.hobbies li::before {
+    content: "•";
+    color: #007BFF;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    /* margin-top: 50px; */
+    font-size: 0.9rem;
+    color: #fff;
+}
+.about{
+text-align: center;
+color: #fff;
+
+}
+footer {
+    background-color:  #8128c5;
+    color: #fff;
+    padding:  0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  
+  .footer-col {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+    color: #e9e1e1;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+  
+  .footer-col ul {
+    list-style-type: none;
+  
+  }
+  .p1{
+    color: white;
+  }
+  .footer-col ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  .footer-col ul li a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .footer-col ul li a:hover {
+    color: #fff;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #b0b0b0;
+    font-size: 30px;
+  }
+  
+  .social-links a:hover {
+    color: #fff;
+  }
+  
+  .footer-bottom {
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .footer-bottom p {
+    color: #000000;
+  }
